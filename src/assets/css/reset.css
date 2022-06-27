@@ -1,4 +1,8 @@
 @import "~normalize.css";
+@import "~antd/dist/antd.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 h1,
 h2,
 h3,
@@ -7,6 +11,11 @@ h5,
 h6,
 body {
   margin: 0;
+}
+
+button,
+input {
+  outline: none;
 }
 
 body,
@@ -18,4 +27,33 @@ button {
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-text-size-adjust: none;
+}
+
+.wrap_1100 {
+  width: 1100px;
+  margin: 0 auto;
+}
+.wrap_980 {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.banner-arrows-sprite {
+  background: url("../img/banner-arrows-sprite.png") no-repeat;
+}
+
+.cover-sprite {
+  background: url("../img/cover-sprite.png") no-repeat;
+}
+
+.download-sprite {
+  background: url("../img/download-sprite.png") no-repeat;
+}
+
+.footer-sprite {
+  background: url("../img/footer-sprite.png") no-repeat;
+}
+
+.topbar-sprite {
+  background: url("../img/topbar-sprite.png") no-repeat;
 }
