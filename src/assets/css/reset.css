@@ -57,3 +57,13 @@ button {
 .topbar-sprite {
   background: url("../img/topbar-sprite.png") no-repeat;
 }
+
+.foot-links-sprite {
+  background: url("../img/footer-sprite.png");
+  background-size: 110px 552px;
+}
+
+.foot-links-text-sprite {
+  background: url("../img/foot_enter_tt.png");
+  background-size: 180px 139px;
+}

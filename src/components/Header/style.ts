@@ -38,9 +38,12 @@ const HeaderWrapper = styled.div`
             margin: 0 auto;
             background-position: -226px 0;
           }
-          &.active {
+          &.active,
+          &:hover {
             color: white;
             background: #000000;
+          }
+          &.active {
             .red-arrow {
               display: block;
             }
