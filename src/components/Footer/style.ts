@@ -25,9 +25,6 @@ const FooterWrapper = styled.div`
       }
       a {
         color: #999;
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
     .police-links {

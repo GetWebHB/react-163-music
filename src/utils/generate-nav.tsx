@@ -19,7 +19,7 @@ function generateNav(headerData: headerData[]) {
     }
 
     return (
-      <NavLink className="item" to={linkUrl} exact key={linkUrl}>
+      <NavLink className="item" to={linkUrl} key={linkUrl}>
         {item.title}
         <i className="topbar-sprite red-arrow"></i>
       </NavLink>

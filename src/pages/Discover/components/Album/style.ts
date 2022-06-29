@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const HomeWrapper = styled.div`
+const AlbumWrapper = styled.div`
   font-size: 20px;
 `;
 
-export default HomeWrapper;
+export default AlbumWrapper;

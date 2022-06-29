@@ -15,7 +15,9 @@ const Footer = memo(() => {
               return (
                 <Fragment key={item.title}>
                   <li>
-                    <a href={item.linkUrl}>{item.title}</a>
+                    <a href={item.linkUrl} target="_blank" rel="noreferrer">
+                      {item.title}
+                    </a>
                   </li>
                   {/* 最后|一个不显示 */}
                   {footerData.length - 1 !== index && (
@@ -29,18 +31,28 @@ const Footer = memo(() => {
             <span className="mr-3">网易公司版权所有©1997-2022</span>
             <span>
               杭州乐读科技有限公司运营：
-              <a href="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/8282703158/452a/ca0c/3a10/caad83bc8ffaa850a9dc1613d74824fc.png">
+              <a
+                href="https://p5.music.126.net/obj/wo3DlcOGw6DClTvDisK1/8282703158/452a/ca0c/3a10/caad83bc8ffaa850a9dc1613d74824fc.png"
+                target="_blank"
+                rel="noreferrer"
+              >
                 浙网文[2021] 1186-054号
               </a>
             </span>
           </p>
           <p className="police-links">
-            <a href="https://beian.miit.gov.cn/#/Integrated/index">
+            <a
+              href="https://beian.miit.gov.cn/#/Integrated/index"
+              target="_blank"
+              rel="noreferrer"
+            >
               粤B2-20090191-18 工业和信息化部备案管理系统网站
             </a>
             <a
               className="ml-3"
               href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010902002564"
+              target="_blank"
+              rel="noreferrer"
             >
               <img src={police_img} alt="police" /> 浙公网安备 33010902002564号
             </a>

@@ -1,5 +1,5 @@
 export const headerData = [
-  { title: "发现音乐", linkUrl: "/" },
+  { title: "发现音乐", linkUrl: "/discover" },
   { title: "我的音乐", linkUrl: "/my" },
   { title: "关注", linkUrl: "/attention" },
   {
@@ -11,6 +11,15 @@ export const headerData = [
     linkUrl: "https://music.163.com/st/musician",
   },
   { title: "下载客户端", linkUrl: "/download" },
+];
+
+export const topBarData = [
+  { title: "推荐", linkUrl: "/discover/recommend" },
+  { title: "排行榜", linkUrl: "/discover/toplist" },
+  { title: "歌单", linkUrl: "/discover/playlist" },
+  { title: "主播电台", linkUrl: "/discover/djradio" },
+  { title: "歌手", linkUrl: "/discover/artist" },
+  { title: "新碟上架", linkUrl: "/discover/album" },
 ];
 
 export const footerData = [
