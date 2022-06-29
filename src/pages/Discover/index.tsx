@@ -22,9 +22,7 @@ const Discover: React.FC = memo((props: RouteConfig) => {
         </ul>
       </div>
       <DiscoverContent>
-        <div className="wrap_980 discover-content">
-          {renderRoutes(route.routes)}
-        </div>
+        <div className="wrap_980">{renderRoutes(route.routes)}</div>
       </DiscoverContent>
     </DiscoverWrapper>
   );
