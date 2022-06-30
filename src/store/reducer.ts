@@ -1,6 +1,21 @@
 import { combineReducers } from "redux";
-import { reducer as DiscoverReducer } from "./discover";
 
-const reducer = combineReducers({ discover: DiscoverReducer });
+import {
+  recommendReducer,
+  topListReducer,
+  albumReducer,
+  djRadioReducer,
+  playListReducer,
+  artistReducer,
+} from "./discover";
+
+const reducer = combineReducers({
+  recommend: recommendReducer,
+  topList: topListReducer,
+  album: albumReducer,
+  djRadio: djRadioReducer,
+  playList: playListReducer,
+  artistReducer: artistReducer,
+});
 
 export default reducer;
