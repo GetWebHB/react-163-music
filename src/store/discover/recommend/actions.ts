@@ -1,16 +1,16 @@
 import { getBannerList } from "@/services/discover";
-import { BANNER_LIST } from "./constant";
-import { IBannerList } from "../types";
+import { CHANGE_BANNER_LIST } from "./constant";
+import { IBannerList, IBannerData } from "../types";
 
 export const changeBannerAction = (bannerList: IBannerList[]) => ({
-  type: BANNER_LIST,
+  type: CHANGE_BANNER_LIST,
   bannerList,
 });
 
 export function getBanner() {
   return (dispatch: any) => {
-    getBannerList().then((res: any) => {
-      dispatch(changeBannerAction(res?.banners));
+    getBannerList<IBannerData>().then(({ data }) => {
+      dispatch(changeBannerAction(data.banners));
     });
   };
 }

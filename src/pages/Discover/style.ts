@@ -10,22 +10,24 @@ export const DiscoverWrapper = styled.div`
       padding-left: 180px;
       height: inherit;
       li {
+        height: 100%;
         a {
           display: block;
-          height: 100%;
+          padding-top: 7px;
+          height: inherit;
+          &:hover,
           &.active {
             span {
               background: #9b0909;
             }
           }
-
           span {
             display: block;
             font-size: 12px;
             height: 20px;
             line-height: 21px;
             border-radius: 20px;
-            margin: 7px 17px 0;
+            margin: 0 17px 0;
             padding: 0 13px;
             color: white;
           }

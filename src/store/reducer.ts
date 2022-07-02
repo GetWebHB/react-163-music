@@ -1,4 +1,4 @@
-import { combineReducers } from "redux";
+import { combineReducers } from "redux-immutable";
 
 import {
   recommendReducer,
@@ -15,7 +15,7 @@ const reducer = combineReducers({
   album: albumReducer,
   djRadio: djRadioReducer,
   playList: playListReducer,
-  artistReducer: artistReducer,
+  artist: artistReducer,
 });
 
 export default reducer;

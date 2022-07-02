@@ -1,5 +1,5 @@
 import axiosInstance from "../index";
 
-export function getBannerList() {
-  return axiosInstance.get("/banner");
+export function getBannerList<T>() {
+  return axiosInstance.get<T>("/banner");
 }
