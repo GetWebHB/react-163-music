@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "~antd/dist/antd.css";
+@import "./style.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,27 +44,27 @@ button {
 }
 
 .cover-sprite {
-  background: url("../img/cover-sprite.png") no-repeat;
+  background: url("../img/cover-sprite.png") center no-repeat;
 }
 
 .download-sprite {
-  background: url("../img/download-sprite.png") no-repeat;
+  background: url("../img/download-sprite.png") center no-repeat;
 }
 
 .footer-sprite {
-  background: url("../img/footer-sprite.png") no-repeat;
+  background: url("../img/footer-sprite.png") center no-repeat;
 }
 
 .topbar-sprite {
-  background: url("../img/topbar-sprite.png") no-repeat;
+  background: url("../img/topbar-sprite.png") center no-repeat;
 }
 
 .foot-links-sprite {
-  background: url("../img/footer-sprite.png");
+  background: url("../img/footer-sprite.png") center no-repeat;
   background-size: 110px 552px;
 }
 
 .foot-links-text-sprite {
-  background: url("../img/foot_enter_tt.png");
+  background: url("../img/foot_enter_tt.png") center no-repeat;
   background-size: 180px 139px;
 }
