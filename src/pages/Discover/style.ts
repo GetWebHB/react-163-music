@@ -38,6 +38,5 @@ export const DiscoverWrapper = styled.div`
 `;
 
 export const DiscoverContent = styled.div`
-  height: 600px;
   background: #f5f5f5;
 `;

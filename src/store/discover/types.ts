@@ -29,3 +29,20 @@ export interface IBannerList {
   song?: any;
   scm: string;
 }
+
+export interface IHotRecommendData {
+  result: IHotRecommendList[];
+}
+export interface IHotRecommendList {
+  id: number;
+  type: number;
+  name: string;
+  copywriter?: any;
+  picUrl: string;
+  canDislike: boolean;
+  trackNumberUpdateTime: number;
+  playCount: number;
+  trackCount: number;
+  highQuality: boolean;
+  alg: string;
+}

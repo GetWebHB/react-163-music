@@ -30,6 +30,10 @@ button {
   -webkit-text-size-adjust: none;
 }
 
+a:hover {
+  color: #333;
+}
+
 .wrap_1100 {
   width: 1100px;
   margin: 0 auto;
@@ -67,4 +71,12 @@ button {
 .foot-links-text-sprite {
   background: url("../img/foot_enter_tt.png") center no-repeat;
   background-size: 180px 139px;
+}
+
+.btns-play-icon-sprite {
+  background: url("../img/btns-play-icon.png") center no-repeat;
+}
+
+.icon-all-sprite {
+  background: url("../img/iconall.png") center no-repeat;
 }
