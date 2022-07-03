@@ -6,7 +6,7 @@ import { getHotRecommend } from "@/store/discover/recommend/actions";
 import { IHotRecommendList } from "@/store/discover/types";
 
 import TopBar from "@/components/TopBar";
-import AlbumCover from "@/components/AlbumCover";
+import SongsCover from "@/components/SongsCover";
 import HotRecommendWrapper from "./style";
 
 const HotRecommend = memo(() => {
@@ -23,7 +23,7 @@ const HotRecommend = memo(() => {
 
   useEffect(() => {
     if (!(hotRecommendList as any[]).length) {
-      getHotRecommend()(dispatch);
+      dispatch<any>(getHotRecommend());
     }
   }, [dispatch, hotRecommendList]);
 
@@ -37,13 +37,13 @@ const HotRecommend = memo(() => {
       <div className="flex justify-between flex-wrap content mt-5">
         {(hotRecommendList as IHotRecommendList[]).map((item, index) => {
           return (
-            <AlbumCover
+            <SongsCover
               key={item.id}
               imgUrl={item.picUrl}
               lisNum={item.playCount}
               dec={item.name}
               style={{ marginBottom: "30px" }}
-            ></AlbumCover>
+            ></SongsCover>
           );
         })}
       </div>

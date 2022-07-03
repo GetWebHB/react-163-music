@@ -1,36 +1,33 @@
 import React, { memo } from "react";
-
 import AlbumCoverWrapper from "./style";
-
 import changeImageSize from "@/utils/changeImageSize";
-import formatNumber from "@/utils/formatNumber";
 
 interface IProps {
-  imgUrl: string;
-  lisNum: number;
-  dec: string;
-  style: React.CSSProperties;
+  imgUrl?: string;
+  tit?: string;
+  author?: string;
 }
 
-const AlbumCover = memo(({ imgUrl, lisNum, dec, style }: IProps) => {
+const AlbumCover = memo(({ imgUrl = "", tit, author }: IProps) => {
   return (
-    <AlbumCoverWrapper style={style}>
-      <div className="album-top">
-        <a href="todo">
-          <img src={changeImageSize(imgUrl, 140)} alt="album" />
-          <div className="cover-sprite cover"></div>
-          <div className="flex cover-sprite msk">
-            <div className="flex items-center listen-num">
-              <i className="icon-all-sprite listen"></i>
-              <span className="num"> {formatNumber(lisNum)} </span>
-            </div>
-            <i className="icon-all-sprite play"></i>
-          </div>
+    <AlbumCoverWrapper className="btns-play-icon-sprite">
+      <div className="album-cover">
+        <img src={changeImageSize(imgUrl, 100)} alt="album" />
+        <a className="block cover-sprite msk" href="/todo">
+          album
+        </a>
+        <a className="block icon-all-sprite play-icon" href="/todo">
+          play
         </a>
       </div>
-      <p className="dec">
-        <a href="/todo">{dec}</a>
-      </p>
+      <div className="album-info">
+        <p className="text-hide-dot tit">
+          <a href="/todo">{tit}</a>
+        </p>
+        <p className="text-hide-dot author">
+          <a href="/todo">{author}</a>
+        </p>
+      </div>
     </AlbumCoverWrapper>
   );
 });

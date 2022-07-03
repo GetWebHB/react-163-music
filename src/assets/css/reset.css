@@ -19,6 +19,10 @@ input {
   outline: none;
 }
 
+li {
+  list-style: none;
+}
+
 body,
 textarea,
 select,
@@ -41,6 +45,12 @@ a:hover {
 .wrap_980 {
   width: 980px;
   margin: 0 auto;
+}
+
+.text-hide-dot {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .banner-arrows-sprite {

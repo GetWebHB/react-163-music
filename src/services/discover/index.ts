@@ -8,4 +8,11 @@ export function getHotRecommendList<T>() {
   return axiosInstance.get<T>("/personalized", { params: { limit: 8 } });
 }
 
-// url: "/top/album",
+export function getNewAlbumList<T>(params: INewAlbumQuery) {
+  return axiosInstance.get<T>("/top/album", { params });
+}
+
+export interface INewAlbumQuery {
+  limit?: number;
+  offset?: number;
+}

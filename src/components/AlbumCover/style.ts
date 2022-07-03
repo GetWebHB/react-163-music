@@ -1,60 +1,55 @@
 import styled from "styled-components";
 
-const AlbumCoverWrapper = styled.div`
-  width: 140px;
-  .album-top {
+const AlbumCoverWrapper = styled.li`
+  width: 118px;
+  height: 150px;
+  background-position: -260px 100px;
+  .album-cover {
     position: relative;
-    height: 140px;
-    .cover,
+    margin-bottom: 7px;
+    &:hover {
+      .play-icon {
+        display: block;
+      }
+    }
     .msk {
       position: absolute;
-    }
-    .cover {
       top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-position: 0 0;
+      width: 118px;
+      height: 100px;
+      font-size: 0;
+      background-position: 0 -570px;
     }
-    .msk {
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 0 10px;
-      height: 27px;
-      bottom: 0;
-      color: #ccc;
-      background-position: 0 -537px;
-      .listen-num {
-        .listen {
-          width: 14px;
-          height: 11px;
-          margin-right: 5px;
-          background-position: 0 -24px;
-        }
-        .num {
-          line-height: 19px;
-        }
-      }
-
-      .play {
-        width: 16px;
-        height: 17px;
-        background-position: 0 0;
-        &:hover {
-          background-position: 0 -60px;
-        }
+    .play-icon {
+      position: absolute;
+      z-index: 2;
+      display: none;
+      bottom: 5px;
+      right: 28px;
+      font-size: 0;
+      width: 22px;
+      height: 22px;
+      background-position: 0 -85px;
+      &:hover {
+        background-position: 0 -110px;
       }
     }
   }
-  .dec {
-    line-height: 20px;
-    font-size: 14px;
-    margin: 8px 0 3px;
-    a {
-      color: black;
-      &:hover {
-        text-decoration: underline;
+  .album-info {
+    p {
+      font-size: 12px;
+      padding-right: 18px;
+      line-height: 18px;
+    }
+    .tit {
+      line-height: 18px;
+      a {
+        color: #000;
+      }
+    }
+    .author {
+      a {
+        color: #666;
       }
     }
   }

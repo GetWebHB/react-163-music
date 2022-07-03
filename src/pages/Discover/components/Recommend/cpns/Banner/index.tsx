@@ -1,8 +1,8 @@
 import React, { memo, useRef, useEffect, useState } from "react";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
-import { Carousel } from "antd";
 import { getBanner } from "@/store/discover/recommend/actions";
 
+import { Carousel } from "antd";
 import type { CarouselRef } from "antd/lib/carousel";
 import type { Record } from "immutable";
 import type { IBannerList } from "@/store/discover/types";
@@ -22,7 +22,7 @@ const Banner = memo(() => {
 
   useEffect(() => {
     if (!(bannerList as []).length) {
-      getBanner()(dispatch);
+      dispatch<any>(getBanner());
     }
   }, [dispatch, bannerList]);
   const bannerRef = useRef<CarouselRef>(null);

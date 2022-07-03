@@ -5,6 +5,7 @@ import HotRecommend from "./cpns/HotRecommend";
 import TopBar from "@/components/TopBar";
 
 import { RecommendWrapper, RecommendContent } from "./style";
+import NewAlbum from "./cpns/NewAlbum";
 
 const Recommend = memo(() => {
   return (
@@ -13,7 +14,7 @@ const Recommend = memo(() => {
       <RecommendContent className="flex justify-between wrap_980">
         <div className="content-left">
           <HotRecommend />
-          <TopBar title="新碟上架" moreLink="/todo"></TopBar>
+          <NewAlbum />
           <TopBar title="榜单" moreLink="/todo"></TopBar>
         </div>
         <div className="content-right">1</div>
