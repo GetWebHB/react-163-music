@@ -53,10 +53,10 @@ const HeaderWrapper = styled.div`
               content: "";
               display: block;
               position: absolute;
-              top: 21px;
-              left: 100px;
               width: 28px;
               height: 19px;
+              top: 21px;
+              left: 100px;
               background: url(${require("@/assets/img/topbar-sprite.png")})
                 no-repeat -190px 0;
             }

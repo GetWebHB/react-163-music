@@ -10,8 +10,6 @@ const BannerWrapper = styled.div<IProps>`
     position: relative;
     .swiper {
       width: 730px;
-      .swiper-item {
-      }
     }
     .download {
       flex: 1;
@@ -19,9 +17,9 @@ const BannerWrapper = styled.div<IProps>`
       background-position: 0 0;
       a {
         display: none;
-        margin: 186px 0 0 19px;
         width: 215px;
         height: 56px;
+        margin: 186px 0 0 19px;
         font-size: 0;
         background-position: 0 -290px;
       }

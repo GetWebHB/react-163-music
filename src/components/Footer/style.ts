@@ -30,9 +30,9 @@ const FooterWrapper = styled.div`
     .police-links {
       img {
         position: relative;
-        top: -1px;
         width: 14px;
         height: 14px;
+        top: -1px;
         display: inline-block;
         vertical-align: middle;
       }
@@ -43,9 +43,9 @@ const FooterWrapper = styled.div`
     .img-list {
       width: 420px;
       .img-item {
-        margin: 0 auto;
         width: 50px;
         height: 45px;
+        margin: 0 auto;
         &.logo-amped {
           background-position: -60px -456.5px;
         }

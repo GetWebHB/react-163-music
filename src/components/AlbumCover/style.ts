@@ -14,21 +14,21 @@ const AlbumCoverWrapper = styled.li`
     }
     .msk {
       position: absolute;
-      top: 0;
       width: 118px;
       height: 100px;
+      top: 0;
       font-size: 0;
       background-position: 0 -570px;
     }
     .play-icon {
       position: absolute;
+      width: 22px;
+      height: 22px;
       z-index: 2;
       display: none;
       bottom: 5px;
       right: 28px;
       font-size: 0;
-      width: 22px;
-      height: 22px;
       background-position: 0 -85px;
       &:hover {
         background-position: 0 -110px;

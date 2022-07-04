@@ -17,11 +17,11 @@ const SongsCoverWrapper = styled.div`
       background-position: 0 0;
     }
     .msk {
+      width: 100%;
+      height: 27px;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
       padding: 0 10px;
-      height: 27px;
       bottom: 0;
       color: #ccc;
       background-position: 0 -537px;
